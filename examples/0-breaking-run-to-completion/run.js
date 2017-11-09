@@ -1,9 +1,6 @@
 /**
  * Generator is a special kind of function that can start and stop one or more times,
  * and doesn't necessarily ever have to finish.
- * In this example, we know for sure that bar() runs in between x++ and console.log(x).
- * What if bar() wasn't present, but it could still somehow run between the x++ and
- * console.log(x) statements?
  */
 var x = 1;
 
