@@ -1,13 +1,5 @@
-var runner = require('./runner.js');
-
-// async request call simulation
-function request(url) {
-  return new Promise(function(resolve, reject) {
-    setTimeout(function() {
-      resolve("hello world");
-    }, 500);
-  });
-}
+var run = require('../lib/runner.js').run;
+var request = require('../lib/requester.js').request;
 
 // normal function, not a generator
 function bar(url1, url2) {
@@ -35,4 +27,4 @@ function *foo() {
   console.log(r3);
 }
 
-runner.run(foo);
+run(foo);
